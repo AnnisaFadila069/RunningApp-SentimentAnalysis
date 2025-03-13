@@ -2,7 +2,12 @@ jupyter
 google_play_scraper
 pandas
 numpy
-textblob
 seaborn
 matplotlib
+transformers
+nltk
+contractions
+symspellpy
 
+langid
+wordcloud
