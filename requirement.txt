@@ -1,6 +1,7 @@
 jupyter
 google_play_scraper
 pandas
+textblob
 numpy
 seaborn
 matplotlib
@@ -8,6 +9,6 @@ transformers
 nltk
 contractions
 symspellpy
-
+scikit-learn
 langid
 wordcloud
