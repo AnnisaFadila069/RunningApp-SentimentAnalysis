@@ -1,17 +1,56 @@
 # 🏃‍♀️ RunningApp-SentimentAnalysis
 
-Welcome to the **Running App Sentiment Analysis** project!  
-Dalam project ini, dilakukan analisis sentimen terhadap review pengguna aplikasi **Running App** di Google Play Store. Review dikumpulkan melalui proses scraping dan dianalisis untuk memahami opini serta persepsi pengguna.
+Selamat datang di proyek **Running App Sentiment Analysis**!  
+Proyek ini bertujuan untuk menganalisis sentimen dari ulasan pengguna aplikasi **Running App** yang tersedia di Google Play Store. Data dikumpulkan melalui proses scraping, dibersihkan, dianalisis, dan digunakan untuk membangun model klasifikasi sentimen.
 
-📌 Terdapat 6 tahapan utama dalam pipeline analisis ini:
-
-1. **Scraping** review dari halaman Google Play Store.
-2. **Preprocessing** untuk membersihkan dan menyiapkan data teks.
-3. **EDA (Exploratory Data Analysis)** untuk memahami pola data.
-4. **Feature Engineering** menggunakan teknik representasi teks.
-5. **Modeling** untuk klasifikasi sentimen positif atau negatif.
-6. **Task Execution** yang mencakup evaluasi dan visualisasi hasil.
-
-Dengan pendekatan ini, insight berharga dapat diperoleh dari opini pengguna guna meningkatkan kualitas aplikasi.
+📁 **Struktur Notebook Proyek**  
+Proyek ini dibagi ke dalam 4 tahapan utama yang masing-masing direpresentasikan oleh 4 notebook:
 
 ---
+
+### 📌 `1_Scrapping_Apps_Running.ipynb`  
+Tahap ini bertujuan untuk mengumpulkan data review pengguna dari Google Play Store menggunakan teknik **web scraping**. Hasilnya berupa dataset mentah yang siap diproses lebih lanjut.
+
+---
+
+### 🧹 `2_Preprocessing_Apps_Running.ipynb`  
+Notebook ini berfokus pada **pembersihan dan normalisasi teks**, seperti:
+- Menghapus karakter khusus
+- Mengubah huruf menjadi lowercase
+- Tokenisasi dan stopword removal
+- Lemmatization
+
+Tujuan preprocessing adalah menyiapkan data agar optimal untuk analisis dan pemodelan.
+
+---
+
+### 📊 `3_EDA_Apps_Running.ipynb`  
+Tahapan **Exploratory Data Analysis (EDA)** dilakukan untuk memahami pola dan karakteristik data, seperti:
+- Distribusi sentimen
+- Frekuensi kata/kalimat umum
+- Wordcloud dan visualisasi statistik lainnya
+
+Insight dari EDA membantu memahami konteks ulasan pengguna.
+
+---
+
+### 🧠 `4_Feature_Engineering_and_Classification_Apps_Running.ipynb`  
+Notebook ini mencakup dua bagian utama:
+1. **Feature Engineering**:
+   - Representasi teks menggunakan **TF-IDF** dan **Universal Sentence Encoder (USE)**
+   - Pembuatan vektor fitur untuk input ke model
+2. **Modeling & Classification**:
+   - Membangun dan mengevaluasi beberapa model klasifikasi seperti:
+     - Linear SVM
+     - Logistic Regression
+     - Naive Bayes
+     - XGBoost
+     - Random Forest
+
+Hasil evaluasi model digunakan untuk menentukan pendekatan terbaik dalam memprediksi sentimen pengguna.
+
+---
+
+Dengan alur ini, proyek bertujuan memberikan insight berharga dari opini pengguna guna mendukung pengembangan fitur dan kualitas aplikasi Running App.
+
+✨ Happy Analyzing!
