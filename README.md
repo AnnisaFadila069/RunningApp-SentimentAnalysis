@@ -18,9 +18,7 @@ Notebook ini berfokus pada **pembersihan dan normalisasi teks**, seperti:
 - Menghapus karakter khusus
 - Mengubah huruf menjadi lowercase
 - Tokenisasi dan stopword removal
-- Lemmatization
-
-Tujuan preprocessing adalah menyiapkan data agar optimal untuk analisis dan pemodelan.
+- Lemmatization, dst
 
 ---
 
@@ -30,15 +28,11 @@ Tahapan **Exploratory Data Analysis (EDA)** dilakukan untuk memahami pola dan ka
 - Frekuensi kata/kalimat umum
 - Wordcloud dan visualisasi statistik lainnya
 
-Insight dari EDA membantu memahami konteks ulasan pengguna.
-
 ---
 
 ### 🧠 `4_Feature_Engineering_and_Classification_Apps_Running.ipynb`  
 Notebook ini mencakup dua bagian utama:
-1. **Feature Engineering**:
-   - Representasi teks menggunakan **TF-IDF** dan **Universal Sentence Encoder (USE)**
-   - Pembuatan vektor fitur untuk input ke model
+1. **Feature Engineering**
 2. **Modeling & Classification**:
    - Membangun dan mengevaluasi beberapa model klasifikasi seperti:
      - Linear SVM
@@ -46,8 +40,6 @@ Notebook ini mencakup dua bagian utama:
      - Naive Bayes
      - XGBoost
      - Random Forest
-
-Hasil evaluasi model digunakan untuk menentukan pendekatan terbaik dalam memprediksi sentimen pengguna.
 
 ---
 
